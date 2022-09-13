@@ -1,8 +1,9 @@
 F_PROJ_ROOT ?= $(shell bash -c 'export MK_PATH=$(MK_PATH); echo $${MK_PATH%/AI_Engine_Development/*}')
 
-ROOTFS ?= ${PLATFORM_REPO_PATHS}/sw/versal/xilinx-versal-common-v2022.1/rootfs.ext4
-IMAGE ?= ${PLATFORM_REPO_PATHS}/sw/versal/xilinx-versal-common-v2022.1/Image
-SDKTARGETSYSROOT ?= ${SYSROOT}
+# Try to set variable names if they aren't already set
+ROOTFS ?= /home/msears/tools/xilinx-versal-common-v2022.1/rootfs.ext4
+IMAGE ?=  /home/msears/tools/xilinx-versal-common-v2022.1/Image
+SDKTARGETSYSROOT ?= /home/msears/tools/SDK/sysroots/cortexa72-cortexa53-xilinx-linux
 
 # Makefile input options
 TARGET := sw_emu
@@ -140,6 +141,8 @@ host: guard-CXX guard-SDKTARGETSYSROOT
 	$(CXX) $(GCC_FLAGS) $(GCC_INCLUDES) -o host.o host.cpp
 	$(CXX) *.o $(GCC_LIB) -std=c++14 -o host.exe 
 	@echo "COMPLETE: Host application created."
+	@echo "compiler: $(CXX)"
+	@echo "SDKTARGETSYSROOT : $(SDKTARGETSYSROOT)"
 ############################################################################################################################
 
 ##################################################################################################

@@ -1,0 +1,64 @@
+XRT Build Version: 2.13.0 (Vitis)
+       Build Date: 2022-04-06 10:15:09
+          Hash ID: 6bc2a715b17eaa63a4059c9c268abf73662af4d2
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 700120 bytes
+Format : RAW
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.so'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+WARNING: Skipping CLOCK_FREQ_TOPOLOGY section for count size is zero.
+WARNING: Section 'CLOCK_FREQ_TOPOLOGY' content is empty.  No data in the given JSON file.
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was empty.  No action taken.
+Format : JSON
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 3225 bytes
+Format : JSON
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3636 bytes
+Format : RAW
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xml'
+
+Section: 'DEBUG_DATA'(4) was successfully added.
+Size   : 0 bytes
+Format : RAW
+File   : '/dev/null'
+
+Section: 'PDI'(18) was successfully added.
+Size   : 391552 bytes
+Format : raw
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/platform.pdi'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 8076 bytes
+Format : RAW
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/systemDiagramModel.json'
+
+Section: 'AIE_METADATA'(25) was successfully added.
+Size   : 319 bytes
+Format : JSON
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie_control_config.json'
+
+Section: 'EMULATION_DATA'(21) was successfully added.
+Size   : 1418951 bytes
+Format : RAW
+File   : '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/emulationArchive.zip'
+Successfully wrote (2535124 bytes) to the output file: /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin
+Leaving xclbinutil.

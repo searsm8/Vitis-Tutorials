@@ -1,0 +1,330 @@
+<ENTRY>
+{
+ "thisFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work/graph.aiecompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Sep 13 10:53:36 2022",
+ "timestampMillis": "1663091616563",
+ "buildStep": {
+  "cmdId": "21912ff0-a0c3-4c70-bb6a-2751cba2d689",
+  "name": "aiecompiler",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/AIECompiler.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/bin/unwrapped/lnx64.o/aiecompiler -include=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/include -include=./aie -include=./data -include=./aie/kernels -include=./ --platform /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm -workdir=./Work --target=x86sim aie/graph.cpp ",
+  "args": [
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/bin/unwrapped/lnx64.o/aiecompiler",
+   "-include=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/include",
+   "-include=./aie",
+   "-include=./data",
+   "-include=./aie/kernels",
+   "-include=./",
+   "--platform",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm",
+   "-workdir=./Work",
+   "--target=x86sim",
+   "aie/graph.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 10:53:36 2022",
+ "timestampMillis": "1663091616565",
+ "status": {
+  "cmdId": "21912ff0-a0c3-4c70-bb6a-2751cba2d689",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Sep 13 10:53:36 2022",
+ "timestampMillis": "1663091616565",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_UNKNOWN",
+  "target": "TT_UNKNOWN",
+  "kernels": [],
+  "toolVersion": "Vitis AI Engine Compiler Release 2022.1. SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 10:53:36 2022",
+ "timestampMillis": "1663091616568",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "AIE_COMPILER_WORKDIR",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 10:53:36 2022",
+ "timestampMillis": "1663091616569",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work/reports/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 10:53:36 2022",
+ "timestampMillis": "1663091616570",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work/reports/guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Sep 13 10:53:44 2022",
+ "timestampMillis": "1663091624312",
+ "buildStep": {
+  "cmdId": "3a31189a-9f7b-4ae0-91b5-449a4c17ef37",
+  "name": "aieir_be",
+  "logFile": "",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/bin/unwrapped/lnx64.o/aieir_be --time-passes=0 --disable-om-fifo-insertion=false --logcfg-file= --trace-plio-width=64 --aie2ipu-base-addr=1073741824 --pl-freq=0 --use-real-noc=true --show-loggers=false --fast-nonlinearfloats=false --broadcast-enable-core=true --high-performance=false --multi-layer-opt=0 --kernel-address-location=false --target=x86sim --swfifo-threshold=40 --single-mm2s-channel=false --workdir=./Work --exit-after=complete --event-trace-config= --test-iterations=-1 --stacksize=1024 --known-tripcount=false --enable-core-processor-bus=false --platform=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm --event-trace-custom-config= --disable-dma-cmd-alignment=false --enable-ecc-scrubbing=true --float-accuracy=fast --output-archive=libadf.a --write-partitioned-file=true --schemafile=AIEGraphSchema.json --disable-multirate=false --include=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/include --include=./aie --include=./data --include=./aie/kernels --include=./ --verify-switchconfig=true --device= --disable-multirate-analysis=false --fastmath=false --cpp-std=-std=c++17 --enable-mapper-hints-constraints=false --event-trace-advanced-mapping=0 --enable-reconfig=false --compute-heapsize=true --log-level=1 --aiesim-xrt-api=false --gen-graph-cleanup=false --use-canonical-net-names=false --event-trace-port=gmio --use-phy-shim=true --xlopt=1 --pre-compile-kernels=false --trace-aiesim-option=0 --aiearch=aie --mapped-soln-udm= --optimize-pktids=false --no-init=false --adf-api-log-level=2 --num-trace-streams=16 --aie-heat-map=false --enable-partition=false --phydevice= --fast-floats=true --quiet=false --enable-multi-layer=false --exec-timed=0 --pl-auto-restart=false --routed-soln-udm= --large-kernel-program=false --enable-profiling=false --enable-counted-locks=true --runtime-opt=false --disable-transform-merge-broadcast=false --verbose=false --use-async-rtp-locks=true --repo-path= --genArchive=false --kernel-compile-replacement= --pl-axi-lite=false --event-trace-bounding-box= --enable-reconfig-dma-autostart=false --heapsize=1024 --logical-arch= --nodot-graph=false --disable-dma-autostart=false --disable-transform-broadcast-split=true --frontend-warning=0 --frontend-critical-warning=0 -json ./Work/temp/graph.json -sdf-graph aie/graph.cpp ",
+  "args": [
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/bin/unwrapped/lnx64.o/aieir_be",
+   "--time-passes=0",
+   "--disable-om-fifo-insertion=false",
+   "--logcfg-file=",
+   "--trace-plio-width=64",
+   "--aie2ipu-base-addr=1073741824",
+   "--pl-freq=0",
+   "--use-real-noc=true",
+   "--show-loggers=false",
+   "--fast-nonlinearfloats=false",
+   "--broadcast-enable-core=true",
+   "--high-performance=false",
+   "--multi-layer-opt=0",
+   "--kernel-address-location=false",
+   "--target=x86sim",
+   "--swfifo-threshold=40",
+   "--single-mm2s-channel=false",
+   "--workdir=./Work",
+   "--exit-after=complete",
+   "--event-trace-config=",
+   "--test-iterations=-1",
+   "--stacksize=1024",
+   "--known-tripcount=false",
+   "--enable-core-processor-bus=false",
+   "--platform=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm",
+   "--event-trace-custom-config=",
+   "--disable-dma-cmd-alignment=false",
+   "--enable-ecc-scrubbing=true",
+   "--float-accuracy=fast",
+   "--output-archive=libadf.a",
+   "--write-partitioned-file=true",
+   "--schemafile=AIEGraphSchema.json",
+   "--disable-multirate=false",
+   "--include=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/aietools/include",
+   "--include=./aie",
+   "--include=./data",
+   "--include=./aie/kernels",
+   "--include=./",
+   "--verify-switchconfig=true",
+   "--device=",
+   "--disable-multirate-analysis=false",
+   "--fastmath=false",
+   "--cpp-std=-std=c++17",
+   "--enable-mapper-hints-constraints=false",
+   "--event-trace-advanced-mapping=0",
+   "--enable-reconfig=false",
+   "--compute-heapsize=true",
+   "--log-level=1",
+   "--aiesim-xrt-api=false",
+   "--gen-graph-cleanup=false",
+   "--use-canonical-net-names=false",
+   "--event-trace-port=gmio",
+   "--use-phy-shim=true",
+   "--xlopt=1",
+   "--pre-compile-kernels=false",
+   "--trace-aiesim-option=0",
+   "--aiearch=aie",
+   "--mapped-soln-udm=",
+   "--optimize-pktids=false",
+   "--no-init=false",
+   "--adf-api-log-level=2",
+   "--num-trace-streams=16",
+   "--aie-heat-map=false",
+   "--enable-partition=false",
+   "--phydevice=",
+   "--fast-floats=true",
+   "--quiet=false",
+   "--enable-multi-layer=false",
+   "--exec-timed=0",
+   "--pl-auto-restart=false",
+   "--routed-soln-udm=",
+   "--large-kernel-program=false",
+   "--enable-profiling=false",
+   "--enable-counted-locks=true",
+   "--runtime-opt=false",
+   "--disable-transform-merge-broadcast=false",
+   "--verbose=false",
+   "--use-async-rtp-locks=true",
+   "--repo-path=",
+   "--genArchive=false",
+   "--kernel-compile-replacement=",
+   "--pl-axi-lite=false",
+   "--event-trace-bounding-box=",
+   "--enable-reconfig-dma-autostart=false",
+   "--heapsize=1024",
+   "--logical-arch=",
+   "--nodot-graph=false",
+   "--disable-dma-autostart=false",
+   "--disable-transform-broadcast-split=true",
+   "--frontend-warning=0",
+   "--frontend-critical-warning=0",
+   "-json",
+   "./Work/temp/graph.json",
+   "-sdf-graph",
+   "aie/graph.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 10:53:44 2022",
+ "timestampMillis": "1663091624314",
+ "status": {
+  "cmdId": "3a31189a-9f7b-4ae0-91b5-449a4c17ef37",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 10:53:53 2022",
+ "timestampMillis": "1663091633667",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "AIE_COMPILER_WORKDIR",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Sep 13 10:53:53 2022",
+ "timestampMillis": "1663091633668",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_X86SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work/temp/graph.json",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/aie/graph.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "AIE",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 10:53:53 2022",
+ "timestampMillis": "1663091633673",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work/temp/graph.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 10:54:21 2022",
+ "timestampMillis": "1663091661915",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/Work/ps/c_rts/aie_control_config.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_CONTROL_CONFIG",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 10:54:22 2022",
+ "timestampMillis": "1663091662837",
+ "status": {
+  "cmdId": "3a31189a-9f7b-4ae0-91b5-449a4c17ef37",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 10:54:22 2022",
+ "timestampMillis": "1663091662988",
+ "status": {
+  "cmdId": "21912ff0-a0c3-4c70-bb6a-2751cba2d689",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

@@ -1,0 +1,21 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ package can be found at:
+	Reports: /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/reports/package
+	Log files: /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/logs/package
+INFO: [v++ 60-1548] Creating build summary session with primary output ./v++.package_summary, at Tue Sep 13 14:24:51 2022
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Tue Sep 13 14:24:51 2022
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/reports/package/v++_package_a_guidance.html', at Tue Sep 13 14:24:53 2022
+INFO: [v++ 60-895]   Target platform: /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/hw/hw.xsa'
+INFO: [v++ 60-2256] Packaging for software emulation
+INFO: [v++ 82-3881] device architecture set to versal
+INFO: [v++ 82-1022] generating /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/boot_image.bif
+INFO: [v++ 82-3884] generating pdi for arch versal with bif /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/boot_image.bif
+INFO: [v++ 82-1023] generating boot files
+INFO: [v++ 82-3889] validating boot mode
+INFO: [v++ 82-1022] generating /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/launch_sw_emu.sh
+INFO: [v++ 82-1011] creating sd_card directory
+INFO: [v++ 82-1141] Deleting the existing dir /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/sd_card//data/emulation/unified
+INFO: [v++ 82-3528] mkfsimage command run: /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/scripts/vitis/util/mkfsImage.sh -s /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/sd_card/ -o /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/sd_card.img -m 1 -e /home/msears/tools/xilinx-versal-common-v2022.1/rootfs.ext4
+ERROR: [v++ 82-1081] Cannot generate EXT4 sd_card image
+ERROR: [v++ 60-702] Failed to finish packaging
+INFO: [v++ 60-1653] Closing dispatch client.

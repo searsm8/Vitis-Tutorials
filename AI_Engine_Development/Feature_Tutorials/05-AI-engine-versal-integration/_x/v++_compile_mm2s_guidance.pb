@@ -1,0 +1,3 @@
+
+Â
+v++_compile_mm2s$8d37b5d2-5987-4dc5-8456-b82793e3468dàv++  -c --platform /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm -t sw_emu --save-temps -g -k mm2s pl_kernels/mm2s.cpp -o mm2s.xo *˜"“/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/reports/mm2s/v++_compile_mm2s_guidance.html2‰"„/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/v++_compile_mm2s_guidance.pb

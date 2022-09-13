@@ -1,0 +1,344 @@
+{
+ "system_diagram_metadata": {
+  "schema_version": {
+   "major": "2",
+   "minor": "0",
+   "patch": "0"
+  },
+  "xsa": {
+   "vendor": "xilinx.com",
+   "board_id": "xd",
+   "name": "xilinx_vck190_base_202210_1",
+   "version_major": "202210",
+   "version_minor": "1",
+   "description": "\nA base platform targeting VCK190 which is the first Versal AI Core series evaluation kit, enabling designers to develop solutions using AI and DSP engines capable of delivering over 100X greater compute performance compared to current server class CPUs. This board includes 8GB of DDR4 UDIMM, 8GB LPDDR4 component, 400 AI engines, 1968 DSP engines, Dual-Core Arm® Cortex®-A72 and Dual-Core Cortex-R5. More information at https://www.xilinx.com/products/boards-and-kits/vck190.html\n    ",
+   "generated_by": {
+    "name": "Vivado",
+    "version": "2022.1",
+    "cl": "3524922",
+    "time_stamp": "Fri Apr 15 17:17:17 2022"
+   },
+   "board": {
+    "name": "xilinx.com:vck190:3.0",
+    "vendor": "xilinx.com",
+    "part": "xcvc1902-vsva2197-2MP-e-S",
+    "board_part": "xilinx.com:vck190:part0:3.0"
+   },
+   "available_resources": {
+    "LUT": "899840",
+    "REG": "",
+    "BRAM": "967",
+    "DSP": "1968",
+    "URAM": ""
+   },
+   "device_topology": [
+    {
+     "id": "0",
+     "type": "Ddr4",
+     "used": "yes",
+     "sizeKB": "17179869184",
+     "base_address": "0x00000000",
+     "tag": "DDR",
+     "slr": "",
+     "spTag": ""
+    },
+    {
+     "id": "1",
+     "type": "Ddr4",
+     "used": "yes",
+     "sizeKB": "17179869184",
+     "base_address": "0x00000001",
+     "tag": "LPDDR",
+     "slr": "",
+     "spTag": ""
+    },
+    {
+     "id": "2",
+     "type": "Stream",
+     "used": "yes",
+     "sizeKB": "0",
+     "base_address": "20",
+     "tag": "Hecb4be88",
+     "slr": "",
+     "spTag": ""
+    },
+    {
+     "id": "3",
+     "type": "Stream",
+     "used": "yes",
+     "sizeKB": "65536",
+     "base_address": "65586",
+     "tag": "Hecb4be88",
+     "slr": "",
+     "spTag": ""
+    }
+   ],
+   "design_intent": [
+    "embedded"
+   ],
+   "clocks": [
+    {
+     "name": "CPU",
+     "orig_name": "CPU",
+     "id": -1,
+     "default": false,
+     "type": "RESERVED",
+     "spec_frequency": 1,
+     "spec_period": 1000,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 1",
+     "orig_name": "clk_wizard_0_clk_out1",
+     "id": 1,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 104.166666,
+     "spec_period": 9.6,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 0",
+     "orig_name": "clk_wizard_0_clk_out2",
+     "id": 0,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 156.25,
+     "spec_period": 6.4,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 2",
+     "orig_name": "clk_wizard_0_clk_out3",
+     "id": 2,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 312.5,
+     "spec_period": 3.2,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 3",
+     "orig_name": "clk_wizard_0_clk_out4",
+     "id": 3,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 78.125,
+     "spec_period": 12.8,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 4",
+     "orig_name": "clk_wizard_0_clk_out5",
+     "id": 4,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 208.333333,
+     "spec_period": 4.8,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 5",
+     "orig_name": "clk_wizard_0_clk_out6",
+     "id": 5,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 416.666666,
+     "spec_period": 2.4,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    },
+    {
+     "name": "PL 6",
+     "orig_name": "clk_wizard_0_clk_out7",
+     "id": 6,
+     "default": false,
+     "type": "FIXED",
+     "spec_frequency": 625,
+     "spec_period": 1.6,
+     "requested_frequency": 0,
+     "achieved_frequency": 0,
+     "clock_domain": "",
+     "inst_ref": "",
+     "comp_ref": "",
+     "xclbin_name": ""
+    }
+   ]
+  },
+  "xclbin": {
+   "generated_by": {
+    "name": "v++",
+    "version": "2022.1",
+    "cl": "3524075",
+    "time_stamp": "2022-04-13-17:42:45",
+    "options": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/unwrapped/lnx64.o/v++ -l -t sw_emu --platform /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm s2mm.xo mm2s.xo libadf.a --save-temps -g --config system.cfg -o tutorial.xsa ",
+    "xclbin_name": "tutorial",
+    "uuid": "4a6ab661-da7f-4911-a79b-bab2cf9a7013",
+    "link_uuid": "4a6ab661-da7f-4911-a79b-bab2cf9a7013",
+    "package_uuid": "",
+    "system_compile_flow": false
+   },
+   "user_regions": [
+    {
+     "name": "OCL_REGION_0",
+     "type": "clc_region",
+     "instance_path": "",
+     "available_resources": {
+      "LUT": "",
+      "REG": "",
+      "BRAM": "",
+      "DSP": "",
+      "by_SLR": [],
+      "URAM": ""
+     },
+     "kernels": [],
+     "compute_units": [
+      {
+       "id": "0",
+       "kernel_name": "mm2s",
+       "cu_name": "mm2s",
+       "base_address": "",
+       "actual_resources": [],
+       "clock_name": "",
+       "clock_id": 0,
+       "clocks": [],
+       "reset_port_name": ""
+      },
+      {
+       "id": "1",
+       "kernel_name": "s2mm",
+       "cu_name": "s2mm",
+       "base_address": "",
+       "actual_resources": [],
+       "clock_name": "",
+       "clock_id": 0,
+       "clocks": [],
+       "reset_port_name": ""
+      }
+     ],
+     "connectivity": [
+      {
+       "id": "0",
+       "node1": {
+        "type": "compute_unit",
+        "id": "0",
+        "kernel_argument_id": "0",
+        "arg_name": "mem",
+        "mode": "Master",
+        "name": "",
+        "port_name": ""
+       },
+       "node2": {
+        "type": "memory",
+        "id": "0",
+        "kernel_argument_id": "",
+        "arg_name": "",
+        "mode": "",
+        "name": "",
+        "port_name": ""
+       }
+      },
+      {
+       "id": "1",
+       "node1": {
+        "type": "compute_unit",
+        "id": "0",
+        "kernel_argument_id": "1",
+        "arg_name": "s",
+        "mode": "Master",
+        "name": "",
+        "port_name": ""
+       },
+       "node2": {
+        "type": "memory",
+        "id": "2",
+        "kernel_argument_id": "",
+        "arg_name": "",
+        "mode": "",
+        "name": "",
+        "port_name": ""
+       }
+      },
+      {
+       "id": "2",
+       "node1": {
+        "type": "compute_unit",
+        "id": "1",
+        "kernel_argument_id": "0",
+        "arg_name": "mem",
+        "mode": "Master",
+        "name": "",
+        "port_name": ""
+       },
+       "node2": {
+        "type": "memory",
+        "id": "0",
+        "kernel_argument_id": "",
+        "arg_name": "",
+        "mode": "",
+        "name": "",
+        "port_name": ""
+       }
+      },
+      {
+       "id": "3",
+       "node1": {
+        "type": "compute_unit",
+        "id": "1",
+        "kernel_argument_id": "1",
+        "arg_name": "s",
+        "mode": "Slave",
+        "name": "",
+        "port_name": ""
+       },
+       "node2": {
+        "type": "memory",
+        "id": "3",
+        "kernel_argument_id": "",
+        "arg_name": "",
+        "mode": "",
+        "name": "",
+        "port_name": ""
+       }
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
+

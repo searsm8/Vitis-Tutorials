@@ -1,0 +1,21 @@
+In file included from xcl_top.cpp:3:
+xcl_top.cpp: In function ‘void* __xlnx_cl_mm2s_Hecb4be88_deallocate_stream(void*)’:
+/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include/xcl_top_defines.h:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include/xcl_top_defines.h:142:3: note: in expansion of macro ‘__XLNX_DEALLOCATE_STREAM__’
+   __XLNX_DEALLOCATE_STREAM__(kname,argtype,type) \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xcl_top.cpp:44:1: note: in expansion of macro ‘__XLNX_DEFINE_STREAM_FUNCS__’
+ __XLNX_DEFINE_STREAM_FUNCS__(mm2s, Hecb4be88, __xlnx_cl_struct_type_0)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xcl_top.cpp: In function ‘void* __xlnx_cl_s2mm_Hecb4be88_deallocate_stream(void*)’:
+/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include/xcl_top_defines.h:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include/xcl_top_defines.h:142:3: note: in expansion of macro ‘__XLNX_DEALLOCATE_STREAM__’
+   __XLNX_DEALLOCATE_STREAM__(kname,argtype,type) \
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xcl_top.cpp:47:1: note: in expansion of macro ‘__XLNX_DEFINE_STREAM_FUNCS__’
+ __XLNX_DEFINE_STREAM_FUNCS__(s2mm, Hecb4be88, __xlnx_cl_struct_type_1)
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~

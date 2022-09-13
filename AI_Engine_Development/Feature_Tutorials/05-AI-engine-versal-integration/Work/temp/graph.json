@@ -1,0 +1,371 @@
+{
+    "schema": "MEGraphSchema-0.5",
+    "id": "root",
+    "blockTypes": {
+        "b0": {
+            "type": "function",
+            "function": "fir_27t_sym_hb_2i",
+            "srcFile": "kernels/interpolators/hb27_2i.cc",
+            "headers": [
+                "include.h"
+            ],
+            "ports": {
+                "pi0": {
+                    "type": "mem",
+                    "elementType": "cint16",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "circularBuffer": 1,
+                    "portName": "in[0]",
+                    "varName": "inputcb",
+                    "cppDataType": "input_window<cint16> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "cint16",
+                    "direction": "out",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "outputcb",
+                    "cppDataType": "output_window<cint16> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                }
+            }
+        },
+        "b1": {
+            "type": "function",
+            "function": "polar_clip",
+            "srcFile": "kernels/polar_clip.cpp",
+            "ports": {
+                "pi0": {
+                    "type": "stream",
+                    "elementType": "cint16",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "portName": "in[0]",
+                    "varName": "in",
+                    "cppDataType": "input_stream<cint16> *"
+                },
+                "po0": {
+                    "type": "stream",
+                    "elementType": "cint16",
+                    "direction": "out",
+                    "parameterIndex": 1,
+                    "portName": "out[0]",
+                    "varName": "out",
+                    "cppDataType": "output_stream<cint16> *"
+                }
+            }
+        },
+        "b2": {
+            "type": "function",
+            "function": "classifier",
+            "srcFile": "kernels/classifiers/classify.cc",
+            "headers": [
+                "include.h"
+            ],
+            "ports": {
+                "pi0": {
+                    "type": "stream",
+                    "elementType": "cint16",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "portName": "in[0]",
+                    "varName": "input",
+                    "cppDataType": "input_stream<cint16> *"
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "output",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                }
+            }
+        },
+        "b3": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "cint16",
+                    "direction": "out",
+                    "portName": "in.out[0]"
+                }
+            }
+        },
+        "b4": {
+            "type": "plio",
+            "ports": {
+                "pi0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "portName": "out.in[0]"
+                }
+            }
+        }
+    },
+    "blockInstances": {
+        "i0": {
+            "blockType": "b0",
+            "graphIds": [
+                0
+            ],
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "qualifiedGraphName": "clipgraph",
+            "qualifiedName": "clipgraph.interpolator",
+            "runTime": 0.8,
+            "fabric": "me",
+            "instanceId": 0,
+            "loc": "aie/graph.h:41:22"
+        },
+        "i1": {
+            "blockType": "b1",
+            "graphIds": [
+                0
+            ],
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "qualifiedGraphName": "clipgraph",
+            "qualifiedName": "clipgraph.clip",
+            "runTime": 0.8,
+            "fabric": "me",
+            "instanceId": 1,
+            "loc": "aie/graph.h:42:14"
+        },
+        "i2": {
+            "blockType": "b2",
+            "graphIds": [
+                0
+            ],
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "qualifiedGraphName": "clipgraph",
+            "qualifiedName": "clipgraph.classify",
+            "runTime": 0.8,
+            "fabric": "me",
+            "instanceId": 2,
+            "loc": "aie/graph.h:43:18"
+        },
+        "i3": {
+            "blockType": "b3",
+            "graphIds": [
+                0
+            ],
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "qualifiedGraphName": "clipgraph",
+            "qualifiedName": "clipgraph.in",
+            "dataWidth": 32,
+            "dataFile": "data/input.txt",
+            "logicalName": "DataIn1",
+            "instanceId": 0,
+            "loc": "aie/graph.h:36:5"
+        },
+        "i4": {
+            "blockType": "b4",
+            "graphIds": [
+                0
+            ],
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "qualifiedGraphName": "clipgraph",
+            "qualifiedName": "clipgraph.out",
+            "dataWidth": 32,
+            "dataFile": "data/output.txt",
+            "logicalName": "DataOut1",
+            "instanceId": 1,
+            "loc": "aie/graph.h:37:5"
+        }
+    },
+    "portInstances": {
+        "i0_pi0": {
+            "margin": 64,
+            "port": "pi0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "interpolator.in[0]",
+            "qualifiedName": "clipgraph.interpolator.in[0]",
+            "instanceId": 0,
+            "blockInstance": "i0",
+            "blockSize": 512
+        },
+        "i0_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "interpolator.out[0]",
+            "qualifiedName": "clipgraph.interpolator.out[0]",
+            "instanceId": 1,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i1_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "clip.in[0]",
+            "qualifiedName": "clipgraph.clip.in[0]",
+            "instanceId": 2,
+            "blockInstance": "i1"
+        },
+        "i1_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "clip.out[0]",
+            "qualifiedName": "clipgraph.clip.out[0]",
+            "instanceId": 3,
+            "blockInstance": "i1"
+        },
+        "i2_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "classify.in[0]",
+            "qualifiedName": "clipgraph.classify.in[0]",
+            "instanceId": 4,
+            "blockInstance": "i2"
+        },
+        "i2_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "classify.out[0]",
+            "qualifiedName": "clipgraph.classify.out[0]",
+            "instanceId": 5,
+            "blockInstance": "i2",
+            "blockSize": 1024
+        },
+        "i3_po0": {
+            "margin": 64,
+            "port": "po0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "in.out[0]",
+            "qualifiedName": "clipgraph.in.out[0]",
+            "blockInstance": "i3"
+        },
+        "i4_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "portName": "out.in[0]",
+            "qualifiedName": "clipgraph.out.in[0]",
+            "blockInstance": "i4"
+        }
+    },
+    "nets": {
+        "net0": {
+            "srcInstance": "i3",
+            "srcPort": "i3_po0",
+            "dstInstance": "i0",
+            "dstPort": "i0_pi0",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "aie/graph.h:56:7"
+            ]
+        },
+        "net1": {
+            "srcInstance": "i0",
+            "srcPort": "i0_po0",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi0",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "aie/graph.h:58:7"
+            ]
+        },
+        "net2": {
+            "srcInstance": "i1",
+            "srcPort": "i1_po0",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi0",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "aie/graph.h:61:7"
+            ]
+        },
+        "net3": {
+            "srcInstance": "i2",
+            "srcPort": "i2_po0",
+            "dstInstance": "i4",
+            "dstPort": "i4_pi0",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "aie/graph.h:64:7"
+            ]
+        }
+    },
+    "debugInfo": {
+        "i0": {
+            "varName": "interpolator"
+        },
+        "i1": {
+            "varName": "clip"
+        },
+        "i2": {
+            "varName": "classify"
+        },
+        "i3": {
+            "varName": "in"
+        },
+        "i4": {
+            "varName": "out"
+        },
+        "i0_pi0": {
+            "varName": "interpolator.in[0]"
+        },
+        "i0_po0": {
+            "varName": "interpolator.out[0]"
+        },
+        "i1_pi0": {
+            "varName": "clip.in[0]"
+        },
+        "i1_po0": {
+            "varName": "clip.out[0]"
+        },
+        "i2_pi0": {
+            "varName": "classify.in[0]"
+        },
+        "i2_po0": {
+            "varName": "classify.out[0]"
+        },
+        "i3_po0": {
+            "varName": "in.out[0]"
+        },
+        "i4_pi0": {
+            "varName": "out.in[0]"
+        }
+    },
+    "graphFilesInfo": {
+        "headerFiles": [
+            "aie/graph.h"
+        ]
+    }
+}

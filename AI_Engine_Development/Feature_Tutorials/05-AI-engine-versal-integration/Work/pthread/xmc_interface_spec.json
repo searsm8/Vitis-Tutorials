@@ -1,0 +1,50 @@
+{
+  "inputs": [
+    {
+      "type": "plio",
+      "direction": "input",
+      "index": 0,
+      "ports": [
+          {
+            "portName": "in[0]",
+            "qualifiedName": "clipgraph.interpolator",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "type": "mem",
+            "elementType": "cint16",
+            "direction": "in",
+            "blockSize": 512,
+            "margin": 64,
+            "isSync": 0,
+            "dimensions": [  ]
+          }
+      ],
+      "qualifiedGraphPortAliasNames": [
+        ]
+    }
+    ],
+  "outputs": [
+    {
+      "type": "plio",
+      "direction": "output",
+      "index": 0,
+      "ports": [
+          {
+            "portName": "out[0]",
+            "qualifiedName": "clipgraph.classify",
+            "graphName": "clipgraph",
+            "graphType": "clipped",
+            "type": "mem",
+            "elementType": "int32",
+            "direction": "out",
+            "blockSize": 1024,
+            "margin": 0,
+            "isSync": 0,
+            "dimensions": [  ]
+          }
+      ],
+      "qualifiedGraphPortAliasNames": [
+        ]
+    }
+  ]
+}

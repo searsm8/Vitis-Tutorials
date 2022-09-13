@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mm2s" dir="">
+  <FileSets>
+    <FileSet Name="kernel_mm2s" Type="DesignSrcs">
+      <File Path="/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/pl_kernels/mm2s.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

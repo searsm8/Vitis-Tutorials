@@ -1,0 +1,6 @@
+{
+    "ai_engine": {
+        "DataIn1": "20,true,qdma_axis,32,0,0,0,0",
+        "DataOut1": "50,false,qdma_axis,32,0,0,0,0"
+    }
+}

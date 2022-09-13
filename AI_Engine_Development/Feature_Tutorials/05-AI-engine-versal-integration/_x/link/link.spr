@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_s2mm" Type="DesignSrcs">
+      <File Path="/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/s2mm/s2mm/cpu_sources/s2mm.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="kernel_mm2s" Type="DesignSrcs">
+      <File Path="/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/mm2s/mm2s/cpu_sources/mm2s.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

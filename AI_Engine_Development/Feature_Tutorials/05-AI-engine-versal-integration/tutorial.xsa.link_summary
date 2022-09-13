@@ -1,0 +1,780 @@
+<ENTRY>
+{
+ "thisFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/tutorial.xsa.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:35 2022",
+ "timestampMillis": "1663094315823",
+ "buildStep": {
+  "cmdId": "4a6ab661-da7f-4911-a79b-bab2cf9a7013",
+  "name": "v++",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/link.steps.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t sw_emu --platform /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm s2mm.xo mm2s.xo libadf.a --save-temps -g --config system.cfg -o tutorial.xsa ",
+  "args": [
+   "-l",
+   "-t",
+   "sw_emu",
+   "--platform",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm",
+   "s2mm.xo",
+   "mm2s.xo",
+   "libadf.a",
+   "--save-temps",
+   "-g",
+   "--config",
+   "system.cfg",
+   "-o",
+   "tutorial.xsa"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/system.cfg",
+    "content": "# © Copyright 2020 Xilinx, Inc.\n# \n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n# \n#     http://www.apache.org/licenses/LICENSE-2.0\n# \n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n\n[connectivity]\nnk=mm2s:1:mm2s\nnk=s2mm:1:s2mm\nsc=mm2s.s:ai_engine_0.DataIn1\nsc=ai_engine_0.DataOut1:s2mm.s"
+   }
+  ],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:35 2022",
+ "timestampMillis": "1663094315824",
+ "status": {
+  "cmdId": "4a6ab661-da7f-4911-a79b-bab2cf9a7013",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Sep 13 11:38:38 2022",
+ "timestampMillis": "1663094318679",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_vck190_base_202210_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "tutorial",
+    "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "s2mm",
+     "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/s2mm.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/s2mm/s2mm/cpu_sources/s2mm.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "s2mm"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mm2s",
+     "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/mm2s.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/mm2s/mm2s/cpu_sources/mm2s.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "mm2s"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1. SW Build 3524075 on 2022-04-13-17:42:45",
+  "aieInputs": {
+   "base": {
+    "type": "AI_LIBSDF",
+    "name": "libadf",
+    "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/libadf.a",
+    "reports": [
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie.partial.aiecompile_summary",
+      "name": "",
+      "fileType": "TEXT",
+      "reportType": "TASK_LOG_SUMMARY",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie_control_config.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_CONTROL_CONFIG",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie.router.soln.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_ROUTER_SOLUTION",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie.mapped.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_GRAPH_MAPPED",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie.compiler.report.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_COMPILER_REPORT",
+      "cmdId": ""
+     }
+    ],
+    "uuid": ""
+   },
+   "sources": [],
+   "type": "AI_UKNOWN"
+  }
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 11:38:39 2022",
+ "timestampMillis": "1663094319064",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:39 2022",
+ "timestampMillis": "1663094319067",
+ "buildStep": {
+  "cmdId": "5458450a-4e46-4c62-a77a-a96b15a595cb",
+  "name": "regiongen",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_regiongen.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../runtime/bin/regiongen_new -v -n -m /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xml -r /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.rtd -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-n",
+   "-m",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xml",
+   "-r",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.rtd",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:39 2022",
+ "timestampMillis": "1663094319068",
+ "status": {
+  "cmdId": "5458450a-4e46-4c62-a77a-a96b15a595cb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:42 2022",
+ "timestampMillis": "1663094322077",
+ "status": {
+  "cmdId": "5458450a-4e46-4c62-a77a-a96b15a595cb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:42 2022",
+ "timestampMillis": "1663094322090",
+ "buildStep": {
+  "cmdId": "1c0297ad-e7dc-46bf-9545-c8f92b9db295",
+  "name": "gcc",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/mm2s/mm2s_kernel_gcc.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../include -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/auto_cc/include -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include -std=c++14 -g -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/mm2s.o -MP -MF obj/mm2s.Cd /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/mm2s/mm2s/cpu_sources/mm2s.cpp -o obj/mm2s.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../include",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include",
+   "-std=c++14",
+   "-g",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/mm2s.o",
+   "-MP",
+   "-MF",
+   "obj/mm2s.Cd",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/mm2s/mm2s/cpu_sources/mm2s.cpp",
+   "-o",
+   "obj/mm2s.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:42 2022",
+ "timestampMillis": "1663094322091",
+ "status": {
+  "cmdId": "1c0297ad-e7dc-46bf-9545-c8f92b9db295",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:45 2022",
+ "timestampMillis": "1663094325098",
+ "status": {
+  "cmdId": "1c0297ad-e7dc-46bf-9545-c8f92b9db295",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:45 2022",
+ "timestampMillis": "1663094325105",
+ "buildStep": {
+  "cmdId": "577ab7c1-75ac-47a6-9911-18272447159d",
+  "name": "ar",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/mm2s/mm2s_ar.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/mm2s/mm2s.csim_cu.a /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/mm2s/obj/mm2s.o",
+  "args": [
+   "-cr",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/mm2s/mm2s.csim_cu.a",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/mm2s/obj/mm2s.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:45 2022",
+ "timestampMillis": "1663094325107",
+ "status": {
+  "cmdId": "577ab7c1-75ac-47a6-9911-18272447159d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:46 2022",
+ "timestampMillis": "1663094326113",
+ "status": {
+  "cmdId": "577ab7c1-75ac-47a6-9911-18272447159d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:46 2022",
+ "timestampMillis": "1663094326124",
+ "buildStep": {
+  "cmdId": "1fe16a0e-809e-441b-b1f3-b9eedaa4a934",
+  "name": "gcc",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/s2mm/s2mm_kernel_gcc.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../include -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/auto_cc/include -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include -std=c++14 -g -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/s2mm.o -MP -MF obj/s2mm.Cd /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/s2mm/s2mm/cpu_sources/s2mm.cpp -o obj/s2mm.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../include",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include",
+   "-std=c++14",
+   "-g",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/s2mm.o",
+   "-MP",
+   "-MF",
+   "obj/s2mm.Cd",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/xo/s2mm/s2mm/cpu_sources/s2mm.cpp",
+   "-o",
+   "obj/s2mm.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:46 2022",
+ "timestampMillis": "1663094326125",
+ "status": {
+  "cmdId": "1fe16a0e-809e-441b-b1f3-b9eedaa4a934",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:49 2022",
+ "timestampMillis": "1663094329131",
+ "status": {
+  "cmdId": "1fe16a0e-809e-441b-b1f3-b9eedaa4a934",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:49 2022",
+ "timestampMillis": "1663094329136",
+ "buildStep": {
+  "cmdId": "1fd8321b-ac1e-403b-a2bf-0b49832bfee4",
+  "name": "ar",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/s2mm/s2mm_ar.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/binutils-2.26/bin/ar -cr /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/s2mm/s2mm.csim_cu.a /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/s2mm/obj/s2mm.o",
+  "args": [
+   "-cr",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/s2mm/s2mm.csim_cu.a",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/s2mm/obj/s2mm.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:49 2022",
+ "timestampMillis": "1663094329137",
+ "status": {
+  "cmdId": "1fd8321b-ac1e-403b-a2bf-0b49832bfee4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:50 2022",
+ "timestampMillis": "1663094330147",
+ "status": {
+  "cmdId": "1fd8321b-ac1e-403b-a2bf-0b49832bfee4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:50 2022",
+ "timestampMillis": "1663094330166",
+ "buildStep": {
+  "cmdId": "92603c7c-5c5d-4ec5-a1bf-9f8a2ce00b8c",
+  "name": "g++",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_xcl_top_gpp.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/gcc-8.3.0/bin/g++ -I . -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../include -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../common/technology/autopilot/opencl -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include -I /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../include",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/../data/emulation/include",
+   "-I",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:50 2022",
+ "timestampMillis": "1663094330170",
+ "status": {
+  "cmdId": "92603c7c-5c5d-4ec5-a1bf-9f8a2ce00b8c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:53 2022",
+ "timestampMillis": "1663094333197",
+ "status": {
+  "cmdId": "92603c7c-5c5d-4ec5-a1bf-9f8a2ce00b8c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:53 2022",
+ "timestampMillis": "1663094333209",
+ "buildStep": {
+  "cmdId": "a9e3f93b-dfd6-4c49-beaa-0e4c34775fe7",
+  "name": "g++",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_top_gpp.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/gcc-8.3.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,tutorial.so -o tutorial.so mm2s/mm2s.csim_cu.a s2mm/s2mm.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lib/lnx64.o -lhlsmathsim -L /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fpo_v7_0 -L /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,tutorial.so",
+   "-o",
+   "tutorial.so",
+   "mm2s/mm2s.csim_cu.a",
+   "s2mm/s2mm.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fpo_v7_0",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_0_bitacc_cmodel",
+   "-Wl,-rpath,/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fpo_v7_0",
+   "-L",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis_HLS/2022.1/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vivado/2022.1/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:53 2022",
+ "timestampMillis": "1663094333211",
+ "status": {
+  "cmdId": "a9e3f93b-dfd6-4c49-beaa-0e4c34775fe7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:54 2022",
+ "timestampMillis": "1663094334218",
+ "status": {
+  "cmdId": "a9e3f93b-dfd6-4c49-beaa-0e4c34775fe7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 11:38:54 2022",
+ "timestampMillis": "1663094334440",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 11:38:56 2022",
+ "timestampMillis": "1663094336481",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie_control_config.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_CONTROL_CONFIG",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:38:59 2022",
+ "timestampMillis": "1663094339677",
+ "buildStep": {
+  "cmdId": "8e9be6cf-94ad-4a2a-9368-41b1daf02e8c",
+  "name": "xclbinutil",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_xclbinutil.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/xclbinutil --add-section BITSTREAM:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.so --force --target sw_emu --key-value SYS:dfx_enable:false --add-section :JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_xml.rtd --add-section BUILD_METADATA:JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xml --add-section DEBUG_DATA:RAW:/dev/null --add-section PDI:raw:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/platform.pdi --add-section SYSTEM_METADATA:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/systemDiagramModel.json --add-section AIE_METADATA:JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie_control_config.json --add-section EMULATION_DATA:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/emulationArchive.zip --output /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--add-section",
+   "PDI:raw:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/platform.pdi",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/systemDiagramModel.json",
+   "--add-section",
+   "AIE_METADATA:JSON:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/aie_control_config.json",
+   "--add-section",
+   "EMULATION_DATA:RAW:/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/emulationArchive.zip",
+   "--output",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:38:59 2022",
+ "timestampMillis": "1663094339678",
+ "status": {
+  "cmdId": "8e9be6cf-94ad-4a2a-9368-41b1daf02e8c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:39:02 2022",
+ "timestampMillis": "1663094342687",
+ "status": {
+  "cmdId": "8e9be6cf-94ad-4a2a-9368-41b1daf02e8c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep 13 11:39:02 2022",
+ "timestampMillis": "1663094342692",
+ "buildStep": {
+  "cmdId": "3f08fbb7-ab49-412f-a4ff-43cb2c7ece33",
+  "name": "xclbinutil",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin.info",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/xclbinutil --quiet --info --input /home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/link/int/tutorial.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:39:02 2022",
+ "timestampMillis": "1663094342692",
+ "status": {
+  "cmdId": "3f08fbb7-ab49-412f-a4ff-43cb2c7ece33",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:39:05 2022",
+ "timestampMillis": "1663094345702",
+ "status": {
+  "cmdId": "3f08fbb7-ab49-412f-a4ff-43cb2c7ece33",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 11:39:06 2022",
+ "timestampMillis": "1663094346507",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/reports/link/v++_link_tutorial_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 11:39:06 2022",
+ "timestampMillis": "1663094346507",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/v++_link_tutorial_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 11:39:06 2022",
+ "timestampMillis": "1663094346511",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 11:39:06 2022",
+ "timestampMillis": "1663094346516",
+ "status": {
+  "cmdId": "4a6ab661-da7f-4911-a79b-bab2cf9a7013",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

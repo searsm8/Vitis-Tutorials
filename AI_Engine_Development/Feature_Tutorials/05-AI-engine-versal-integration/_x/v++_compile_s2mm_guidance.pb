@@ -1,0 +1,3 @@
+
+Â
+v++_compile_s2mm$d345ecc4-1e34-4bcc-94b9-a9f7a6b03681àv++  -c --platform /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm -t sw_emu --save-temps -g -k s2mm pl_kernels/s2mm.cpp -o s2mm.xo *˜"“/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/reports/s2mm/v++_compile_s2mm_guidance.html2‰"„/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/_x/v++_compile_s2mm_guidance.pb

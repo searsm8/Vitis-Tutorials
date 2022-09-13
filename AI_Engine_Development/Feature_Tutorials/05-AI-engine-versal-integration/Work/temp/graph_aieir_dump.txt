@@ -1,0 +1,80 @@
+Module {
+   def subgraph root {
+      node definitions {
+         def plio b3 iotype:stream to stream {
+             ports {
+               port po0 dir:out porttype:stream elttype:strm<cint16>
+            }
+         }
+         def plio b4 iotype:stream to stream {
+             ports {
+               port pi0 dir:in porttype:stream elttype:strm<int32>
+            }
+         }
+         def aiekernel b0 {
+            ports {
+               port pi0 dir:in porttype:memvariable name: inputcb elttype:wndo<cint16>
+               port po0 dir:out porttype:memvariable name: outputcb elttype:wndo<cint16>
+            }
+            kernel: fir_27t_sym_hb_2i
+            headers : {
+               include.h
+            }
+            srcs:{
+               kernels/interpolators/hb27_2i.cc
+            }
+         }
+         def aiekernel b1 {
+            ports {
+               port pi0 dir:in porttype:streamvariable name: in elttype:strm<cint16>
+               port po0 dir:out porttype:streamvariable name: out elttype:strm<cint16>
+            }
+            kernel: polar_clip
+            srcs:{
+               kernels/polar_clip.cpp
+            }
+         }
+         def aiekernel b2 {
+            ports {
+               port pi0 dir:in porttype:streamvariable name: input elttype:strm<cint16>
+               port po0 dir:out porttype:memvariable name: output elttype:wndo<int32>
+            }
+            kernel: classifier
+            headers : {
+               include.h
+            }
+            srcs:{
+               kernels/classifiers/classify.cc
+            }
+         }
+      }
+      nodes: {
+         me  i0:b0 runtime:0.8 {
+            portinst: i0_pi0 idx[0] datatype:wndo<cint16> mem in blocksize:512 margin:64 max_blocksize:512 bw_utlization = 1 (variable name:  interpolator.in[0])
+            portinst: i0_po0 idx[1] datatype:wndo<cint16> mem out blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  interpolator.out[0])
+         }
+         me  i1:b1 runtime:0.8 {
+            portinst: i1_pi0 idx[0] datatype:strm<cint16> stream in bw_utlization = 1 (variable name:  clip.in[0])
+            portinst: i1_po0 idx[1] datatype:strm<cint16> stream out bw_utlization = 1 (variable name:  clip.out[0])
+         }
+         me  i2:b2 runtime:0.8 {
+            portinst: i2_pi0 idx[0] datatype:strm<cint16> stream in bw_utlization = 1 (variable name:  classify.in[0])
+            portinst: i2_po0 idx[1] datatype:wndo<int32> mem out blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  classify.out[0])
+         }
+         plio  nodeinst:i3:b3 {
+            portinst: i3_po0 idx[-1] datatype:strm<cint16> stream out bw_utlization = 1 (variable name:  in.out[0])
+         }
+         plio  nodeinst:i4:b4 {
+            portinst: i4_pi0 idx[-1] datatype:strm<int32> stream in bw_utlization = 1 (variable name:  out.in[0])
+         }
+      }
+      connections:{
+         Channel net0: Single :src:i3_po0 dst:i0_pi0
+         Channel net1: Single :src:i0_po0 dst:i1_pi0
+         Channel net2: Single :src:i1_po0 dst:i2_pi0
+         Channel net3: Single :src:i2_po0 dst:i4_pi0
+      }
+      constraints {
+      }
+   }
+}

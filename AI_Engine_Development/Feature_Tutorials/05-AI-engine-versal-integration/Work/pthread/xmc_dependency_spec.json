@@ -1,0 +1,18 @@
+{
+  "dependencies":
+    [
+      "PthreadSim.cpp.d",
+      "PthreadSimXmc.cpp.d",
+      "wrap_hb27_2i.cc.d",
+      "wrap_polar_clip.cpp.d",
+      "wrap_classify.cc.d"
+    ],
+  "generated_sources":
+    [
+      "PthreadSim.cpp",
+      "PthreadSimXmc.cpp",
+      "wrap_hb27_2i.cc",
+      "wrap_polar_clip.cpp",
+      "wrap_classify.cc"
+    ]
+}

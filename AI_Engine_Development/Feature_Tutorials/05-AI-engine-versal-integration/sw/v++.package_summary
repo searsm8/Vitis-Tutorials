@@ -1,0 +1,166 @@
+<ENTRY>
+{
+ "thisFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/v++.package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Sep 13 14:24:50 2022",
+ "timestampMillis": "1663104290904",
+ "buildStep": {
+  "cmdId": "7a9a302c-dba3-4b21-acf0-9f29398c7f35",
+  "name": "v++",
+  "logFile": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/package.steps.log",
+  "commandLine": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -p -t sw_emu -f /proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm --package.rootfs=/home/msears/tools/xilinx-versal-common-v2022.1/rootfs.ext4 --package.image_format=ext4 --package.boot_mode=sd --package.kernel_image=/home/msears/tools/xilinx-versal-common-v2022.1/Image --package.defer_aie_run --package.sd_file embedded_exec.sh --package.sd_file host.exe ../tutorial.xsa ../libadf.a ",
+  "args": [
+   "-p",
+   "-t",
+   "sw_emu",
+   "-f",
+   "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm",
+   "--package.rootfs=/home/msears/tools/xilinx-versal-common-v2022.1/rootfs.ext4",
+   "--package.image_format=ext4",
+   "--package.boot_mode=sd",
+   "--package.kernel_image=/home/msears/tools/xilinx-versal-common-v2022.1/Image",
+   "--package.defer_aie_run",
+   "--package.sd_file",
+   "embedded_exec.sh",
+   "--package.sd_file",
+   "host.exe",
+   "../tutorial.xsa",
+   "../libadf.a"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 14:24:50 2022",
+ "timestampMillis": "1663104290905",
+ "status": {
+  "cmdId": "7a9a302c-dba3-4b21-acf0-9f29398c7f35",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Sep 13 14:24:55 2022",
+ "timestampMillis": "1663104295454",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_vck190_base_202210_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_PACKAGE",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "xcl_v++",
+    "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/a.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1. SW Build 3524075 on 2022-04-13-17:42:45",
+  "aieInputs": {
+   "base": {
+    "type": "AI_LIBSDF",
+    "name": "libadf",
+    "file": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/libadf.a",
+    "reports": [
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/int/aie.partial.aiecompile_summary",
+      "name": "",
+      "fileType": "TEXT",
+      "reportType": "TASK_LOG_SUMMARY",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/int/aie_control_config.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_CONTROL_CONFIG",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/int/aie.router.soln.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_ROUTER_SOLUTION",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/int/aie.mapped.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_GRAPH_MAPPED",
+      "cmdId": ""
+     },
+     {
+      "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/int/aie.compiler.report.json",
+      "name": "",
+      "fileType": "JSON",
+      "reportType": "AIE_COMPILER_REPORT",
+      "cmdId": ""
+     }
+    ],
+    "uuid": ""
+   },
+   "sources": [],
+   "type": "AI_UKNOWN"
+  }
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 14:25:07 2022",
+ "timestampMillis": "1663104307708",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/reports/package/v++_package_a_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep 13 14:25:07 2022",
+ "timestampMillis": "1663104307709",
+ "report": {
+  "path": "/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/v++_package_a_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep 13 14:25:07 2022",
+ "timestampMillis": "1663104307720",
+ "status": {
+  "cmdId": "7a9a302c-dba3-4b21-acf0-9f29398c7f35",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

@@ -1,0 +1,14 @@
+all:
+{
+    image
+    {
+        { type=bootimage, file=/home/msears/Vitis-Tutorials/AI_Engine_Development/Feature_Tutorials/05-AI-engine-versal-integration/sw/_x/package/platform.pdi }
+    }
+    image
+    {
+        name=default_subsys, id=0x1c000000
+        { load=0x1000, file=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/sw/xilinx_vck190_base_202210_1/boot/system.dtb }
+        { core=a72-0, exception_level=el-3, trustzone, file=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/sw/xilinx_vck190_base_202210_1/boot/bl31.elf }
+        { core=a72-0, exception_level=el-2, load=0x8000000, file=/proj/xbuilds/SWIP/2022.1_0420_0327/installs/lin64/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/sw/xilinx_vck190_base_202210_1/boot/u-boot.elf }
+    }
+}
