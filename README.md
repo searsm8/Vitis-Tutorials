@@ -149,10 +149,19 @@ The Vitis Tutorials take users through the design methodology and programming mo
                     :new: </a>
             </td>
             <td>
+                <a href="./Hardware_Acceleration/Design_Tutorials/09-sssp-application">Single Source Shortest Path Application :new: </a>
+            </td>
+        </tr>
+	<tr>
+            <td height="24">
+                <a href="./Hardware_Acceleration/Feature_Tutorials/10-p2p-card-to-card">P2P Transfer using Native XRT C++ API
+                    :new: </a>
+            </td>
+            <td>
                 &nbsp;
             </td>
         </tr>
-    </tbody>
+	</tbody>
 </table>
 
 
